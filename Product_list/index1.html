@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fashion Mart - E-commerce</title>
+</head>
+<body>
+    <header>
+        <h1>Fashion Mart</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Search for products..." name="search" class="search-input">
+            <button type="submit" class="search-button">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="collection">
+            <h2>From Our Collection</h2>
+            <p>This real-time shoppability can result in an instant conversion without the risk of cart abandonment.</p>
+            <div class="products">
+                <div class="product" onclick="showPopup('image1.jpg')">
+                    <img src="image1.jpg" alt="Shirt" width="200px">
+                    <p>Shirt Rs200</p>
+                </div>
+                <div class="product" onclick="showPopup('image2.jpg')">
+                    <img src="image2.jpg" alt="Saree" width="200px">
+                    <p>Saree Rs400</p>
+                </div>
+                <div class="product" onclick="showPopup('image4.jpg')">
+                    <img src="image4.jpg" alt="Cargo" width="200px">
+                    <p>Cargo Rs800</p>
+                </div>
+                <div class="product" onclick="showPopup('image3.jpg')">
+                    <img src="image3.jpg" alt="Jeans" width="200px">
+                    <p>Jeans Rs2000</p>
+                </div>
+                <div class="product" onclick="showPopup('image3.jpg')">
+                    <img src="image5.jpg" alt="Jeans" width="200px">
+                    <p>Jeans Rs2000</p>
+                </div>
+                <div class="product" onclick="showPopup('image3.jpg')">
+                    <img src="image6.jpg" alt="Jeans" width="200px">
+                    <p>Jeans Rs2000</p>
+                </div>
+            </div>
+            <button class="show-more">Show Me More</button>
+        </section>
+
+        <section class="story">
+            <h2>About Us</h2>
+            <p>Shoppable content is any form of digital content that allows consumers to shop the featured products directly from the content.</p>
+            <button class="contact-us">Contact Us</button>
+        </section>
+    </main>
+
+    <div id="popup" class="popup" onclick="closePopup()">
+        <span class="close">&times;</span>
+        <img class="popup-content" id="popup-img">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
